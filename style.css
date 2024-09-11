@@ -1,0 +1,142 @@
+/* Navigation styles */
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkorange;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white; /* Make sure the links are visible */
+}
+
+nav ul a.active {
+    background-color: rgba(0, 0, 0, 0.1); /* Light background for active state */
+    color: black; /* Highlight color */
+    font-weight: bold; /* Optional: Make the active link bold */
+}
+
+/* About section styles */
+#about {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust height for responsiveness */
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Parent container styles */
+.parent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Project section styles */
+#project {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    font-size: 18px;
+    font-weight: bold;
+    width: 90%;
+    border: 1px solid black;
+    margin-top: 2vh;
+    background-color: gray;
+    height: auto; /* Adjust height for responsiveness */
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+#project ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Additional styling for About section paragraph */
+#about #one {
+    width: 100%; /* Adjust width for responsiveness */
+    color: darkorange;
+    text-align: center; /* Center-align text */
+}
+
+/* Contact form styles */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+#contact {
+    background-color: crimson;
+    width: 90%;
+    margin-top: 2vh;
+    padding: 3vw;
+    box-sizing: border-box;
+}
+
+/* Footer styles */
+.footer {
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+/* Responsive Styles */
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #about, #project {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #project {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    #about {
+        font-size: 16px;
+    }
+
+    #project {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #contact {
+        width: 100%;
+        padding: 5vw;
+    }
+
+    #contact-form input {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
